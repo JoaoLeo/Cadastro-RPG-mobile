@@ -43,7 +43,7 @@ export default function App() {
        name='Personagens' 
        component={PersonagensStack} 
        options={{
-        tabBarLabel: 'personagens',    
+        tabBarLabel: 'Personagens',    
         tabBarIcon: ({ color }) => (
           <MaterialCommunityIcons name="shield-account" color={color} size={26} />
         ),

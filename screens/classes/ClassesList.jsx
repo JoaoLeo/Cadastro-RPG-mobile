@@ -44,8 +44,8 @@ const ClassesList = ({navigation}) => {
     <View> 
 
      {
-       classes.map((c,index) =>(
-          <View key={index}>  
+       classes.map((c,i) =>(
+          <View key={i}>  
          <Card mode='outlined' style={{backgroundColor: '#708090', marginBottom: 10 }}>
             <Card.Content>
             <Text variant="titleLarge">{c.nome}</Text>
@@ -59,7 +59,7 @@ const ClassesList = ({navigation}) => {
             containerColor='#695757'
             iconColor='white'
             icon="grease-pencil"
-            onPress={() => navigation.push('form-classes', {id : index, obj : c})}></IconButton>
+            onPress={() => navigation.push('form-classes', {id : i, obj : c})}></IconButton>
           </Card.Actions>
           </Card>
           </View>

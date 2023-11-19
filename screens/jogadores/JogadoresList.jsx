@@ -45,8 +45,8 @@ const JogadoresList = ({navigation}) => {
 
      {
        jogadores.map((c,index) =>(
-          <> 
-         <Card key={index} mode='outlined' style={{backgroundColor: '#708090', marginBottom: 10 }}>
+          <View key={index}> 
+         <Card mode='outlined' style={{backgroundColor: '#708090', marginBottom: 10 }}>
             <Card.Content>
             <Text variant="titleLarge">{c.nome}</Text>
                 <Text variant="bodyMedium">Idade: {c.idade}</Text>
@@ -64,7 +64,7 @@ const JogadoresList = ({navigation}) => {
             onPress={() => navigation.push('form-jogadores', {id : index, obj : c})}></IconButton>
           </Card.Actions>
           </Card>
-          </>
+          </View>
         ))
       }
       <Portal>

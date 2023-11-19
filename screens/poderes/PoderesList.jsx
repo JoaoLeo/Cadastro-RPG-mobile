@@ -45,8 +45,8 @@ const PoderesList = ({navigation}) => {
 
      {
        poderes.map((c,i) =>(
-          <> 
-         <Card key={i} mode='outlined' style={{backgroundColor: '#708090', marginBottom: 10 }}>
+          <View key={i} > 
+         <Card mode='outlined' style={{backgroundColor: '#708090', marginBottom: 10 }}>
             <Card.Content>
             <Text variant="titleLarge">{c.nome}</Text>
                 <Text variant="bodyMedium">Elemento: {c.elemento}</Text>
@@ -62,7 +62,7 @@ const PoderesList = ({navigation}) => {
             onPress={() => navigation.push('form-poderes', {id : i, obj : c})}></IconButton>
           </Card.Actions>
           </Card>
-          </>
+          </View>
         ))
       }
       <Portal>

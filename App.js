@@ -8,6 +8,7 @@ import JogadoresStack from './screens/jogadores/JogadoresStack';
 import PersonagensStack from './screens/personagens/PersonagensStack';
 import PocoesStack from './screens/pocoes/PocoesStack';
 import PoderesStack from './screens/poderes/PoderesStack';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -17,12 +18,15 @@ export default function App() {
     
     <PaperProvider>       
       <NavigationContainer>
-      <Tab.Navigator>
+      <Tab.Navigator barStyle={{backgroundColor: "#695757"}}>
       <Tab.Screen 
       name='classes' 
       component={ClassesStack}
       options={{
         tabBarLabel: 'Classes',
+        tabBarIcon: ({ color }) => (
+          <MaterialCommunityIcons name="bookshelf" color={color} size={26} />
+        ),
       }}
        />
       <Tab.Screen 
@@ -30,6 +34,9 @@ export default function App() {
        component={JogadoresStack}
        options={{
         tabBarLabel: 'Jogadores',       
+        tabBarIcon: ({ color }) => (
+          <MaterialCommunityIcons name="controller-classic" color={color} size={26} />
+        ),
       }}
         />
       <Tab.Screen
@@ -37,6 +44,9 @@ export default function App() {
        component={PersonagensStack} 
        options={{
         tabBarLabel: 'personagens',    
+        tabBarIcon: ({ color }) => (
+          <MaterialCommunityIcons name="shield-account" color={color} size={26} />
+        ),
       }}
        />
        <Tab.Screen
@@ -44,6 +54,9 @@ export default function App() {
        component={PocoesStack} 
        options={{
         tabBarLabel: 'Poções',   
+        tabBarIcon: ({ color }) => (
+          <MaterialCommunityIcons name="bowl-mix" color={color} size={26} />
+        ),
       }}
        />
        <Tab.Screen
@@ -51,6 +64,9 @@ export default function App() {
        component={PoderesStack} 
        options={{
         tabBarLabel: 'Poderes', 
+        tabBarIcon: ({ color }) => (
+          <MaterialCommunityIcons name="fire" color={color} size={26} />
+        ),
       }}
        />
         

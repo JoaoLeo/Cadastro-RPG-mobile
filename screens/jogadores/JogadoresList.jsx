@@ -44,9 +44,9 @@ const JogadoresList = ({navigation}) => {
     <View> 
 
      {
-       jogadores.map((c,i) =>(
+       jogadores.map((c,index) =>(
           <> 
-         <Card key={i} mode='outlined' style={{backgroundColor: '#708090', marginBottom: 10 }}>
+         <Card key={index} mode='outlined' style={{backgroundColor: '#708090', marginBottom: 10 }}>
             <Card.Content>
             <Text variant="titleLarge">{c.nome}</Text>
                 <Text variant="bodyMedium">Idade: {c.idade}</Text>
@@ -56,12 +56,12 @@ const JogadoresList = ({navigation}) => {
               </Card.Content>
               <Card.Actions>
             <IconButton icon="trash-can" containerColor='#695757'
-            iconColor='red' onPress={()=>{confirmDelete(i)}}></IconButton>
+            iconColor='red' onPress={()=>{confirmDelete(index)}}></IconButton>
             <IconButton
             containerColor='#695757'
             iconColor='white'
             icon="grease-pencil"
-            onPress={() => navigation.push('form-jogadores', {id : i, obj : c})}></IconButton>
+            onPress={() => navigation.push('form-jogadores', {id : index, obj : c})}></IconButton>
           </Card.Actions>
           </Card>
           </>

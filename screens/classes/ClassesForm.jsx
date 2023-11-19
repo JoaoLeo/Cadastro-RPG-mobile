@@ -1,8 +1,15 @@
 import React from 'react'
+import salvarDados from '../../utils/Salvar'
 
-const ClassesForm = () => {
+const ClassesForm = ({navigation, route}) => {
+  function salvar(dados){
+    salvarDados(dados);
+    navigation.goBack();
+  }
   return (
-    <>ClassesForm</>
+    <>
+    
+    </>
   )
 }
 

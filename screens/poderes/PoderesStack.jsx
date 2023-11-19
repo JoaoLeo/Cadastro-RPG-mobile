@@ -9,8 +9,8 @@ const PoderesStack = () => {
   return (
     <> 
     <Stack.Navigator>
-    <Stack.Screen name='classes' component={Poderes} options={{title: "Poderes"}} />
-    <Stack.Screen name='form-classes' component={PoderesForm} options={{title: "form-classes"}} />
+    <Stack.Screen name='poderes' component={Poderes} options={{title: "Poderes"}} />
+    <Stack.Screen name='form-poderes' component={PoderesForm} options={{title: "Crie um poder"}} />
     </Stack.Navigator>
     </>
   )

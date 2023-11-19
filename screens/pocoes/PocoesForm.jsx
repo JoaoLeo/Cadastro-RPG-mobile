@@ -62,7 +62,6 @@ const PocoesForm = ({navigation, route}) => {
     />
     {(errors.quantidade && touched.quantidade) && <Text style={{color: 'red'}}> {errors.quantidade} </Text>}
     <Divider/>
-{(errors.maestria && touched.maestria) && <Text style={{color: 'red'}}> {errors.maestria} </Text>}
 <Divider/>
 <Picker
   selectedValue={values.perigo}

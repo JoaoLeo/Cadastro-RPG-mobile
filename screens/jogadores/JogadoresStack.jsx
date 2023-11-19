@@ -10,7 +10,7 @@ const JogadoresStack = () => {
     <> 
     <Stack.Navigator>
     <Stack.Screen name='jogadores' component={Jogadores} options={{title: "Jogadores"}} />
-    <Stack.Screen name='form-jogadores' component={JogadoresForm} options={{title: "form-jogadores"}} />
+    <Stack.Screen name='form-jogadores' component={JogadoresForm} options={{title: "Crie um jogador"}} />
     </Stack.Navigator>
     </>
   )

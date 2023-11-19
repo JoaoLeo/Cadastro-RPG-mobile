@@ -20,7 +20,7 @@ export default function App() {
       <NavigationContainer>
       <Tab.Navigator barStyle={{backgroundColor: "#695757"}}>
       <Tab.Screen 
-      name='classes' 
+      name='Classes' 
       component={ClassesStack}
       options={{
         tabBarLabel: 'Classes',
@@ -30,7 +30,7 @@ export default function App() {
       }}
        />
       <Tab.Screen 
-       name='jogadores'
+       name='Jogadores'
        component={JogadoresStack}
        options={{
         tabBarLabel: 'Jogadores',       
@@ -40,7 +40,7 @@ export default function App() {
       }}
         />
       <Tab.Screen
-       name='personagens' 
+       name='Personagens' 
        component={PersonagensStack} 
        options={{
         tabBarLabel: 'personagens',    
@@ -50,7 +50,7 @@ export default function App() {
       }}
        />
        <Tab.Screen
-       name='pocoes' 
+       name='Pocoes' 
        component={PocoesStack} 
        options={{
         tabBarLabel: 'Poções',   
@@ -60,7 +60,7 @@ export default function App() {
       }}
        />
        <Tab.Screen
-       name='poderes' 
+       name='Poderes' 
        component={PoderesStack} 
        options={{
         tabBarLabel: 'Poderes', 

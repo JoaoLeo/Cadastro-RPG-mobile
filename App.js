@@ -9,6 +9,7 @@ import PersonagensStack from './screens/personagens/PersonagensStack';
 import PocoesStack from './screens/pocoes/PocoesStack';
 import PoderesStack from './screens/poderes/PoderesStack';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import InfoStack from './screens/dev/InfoStack';
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -66,6 +67,16 @@ export default function App() {
         tabBarLabel: 'Poderes', 
         tabBarIcon: ({ color }) => (
           <MaterialCommunityIcons name="fire" color={color} size={26} />
+        ),
+      }}
+       />
+       <Tab.Screen
+       name='Dev' 
+       component={InfoStack} 
+       options={{
+        tabBarLabel: 'Dev', 
+        tabBarIcon: ({ color }) => (
+          <MaterialCommunityIcons name="account" color={color} size={26} />
         ),
       }}
        />

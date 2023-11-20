@@ -13,7 +13,7 @@ const Informacoes = () => {
     <Card.Content style={{margin: 5}}>
         <Divider/>
       <Text variant="titleLarge">Github: JoaoLeo</Text>
-      <Text variant="bodyMedium">Email: joaoleonardo9921gmail.com</Text>
+      <Text variant="bodyMedium">Email: joaoleonardo9921@gmail.com</Text>
     </Card.Content>
     
   </Card>
